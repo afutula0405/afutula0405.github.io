@@ -1218,11 +1218,6 @@ pre .javascript .function {
   position: fixed;
   top: 0;
 }
-@media (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
-}
 .sidebar-inner {
   color: #999;
   padding: 18px 10px;
@@ -1282,7 +1277,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #991dfb;
+  background: #7e6c6e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1395,7 +1390,6 @@ pre .javascript .function {
   .sidebar-toggle {
     left: 20px;
     opacity: 0.8;
-    display: none;
   }
 }
 .sidebar-toggle:hover .toggle-line {
@@ -1522,6 +1516,7 @@ pre .javascript .function {
   color: #808080;
   display: inline-block;
   margin: 0 5px;
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .powered-by,
 .theme-info {
@@ -1601,6 +1596,16 @@ pre .javascript .function {
 }
 .back-to-top.back-to-top-on:hover {
   opacity: 0.8;
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 1px;
+  left: 0;
+  position: fixed;
+  width: 0;
+  z-index: 1500;
+  top: 0;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -1933,6 +1938,9 @@ pre .javascript .function {
   .post-meta-item-icon {
     display: inline-block;
   }
+}
+.post-meta-item-text {
+  display: none;
 }
 @media (max-width: 991px) {
   .post-meta-item-text {
